@@ -15,7 +15,7 @@ public class PostLoginUserStepdefs {
     ReqresAPI reqresAPI;
     @Given("Post login user with valid json")
     public void postLoginUserWithValidJson() {
-        File json = new File(Constant.JSON_REQUEST+"/RegisterUser.json");
+        File json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser.json");
         reqresAPI.postLoginUser(json);
     }
 
@@ -26,31 +26,31 @@ public class PostLoginUserStepdefs {
 
     @Given("Post login user with invalid json")
     public void postLoginUserWithInvalidJson() {
-        File inv_json = new File(Constant.JSON_REQUEST+"/RegisterUser_Invalid.json");
+        File inv_json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser_Invalid.json");
         reqresAPI.postLoginUser(inv_json);
     }
 
     @Given("Post login user with invalid email")
     public void postLoginUserWithInvalidEmail() {
-        File inv_email_json = new File(Constant.JSON_REQUEST+"/RegisterUser_InvUser.json");
+        File inv_email_json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser_InvUser.json");
         reqresAPI.postLoginUser(inv_email_json);
     }
 
     @Given("Post login user with only email")
     public void postLoginUserWithOnlyEmail() {
-        File email_json = new File(Constant.JSON_REQUEST+"/RegisterUser_Email.json");
+        File email_json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser_Email.json");
         reqresAPI.postLoginUser(email_json);
     }
 
     @Given("Post login user with invalid account")
     public void postLoginUserWithInvalidAccount() {
-        File inv_acc_json = new File(Constant.JSON_REQUEST+"/RegisterUser_WrongData.json");
+        File inv_acc_json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser_WrongData.json");
         reqresAPI.postLoginUser(inv_acc_json);
     }
 
     @Given("Post login user with only password")
     public void postLoginUserWithOnlyPassword() {
-        File pwd_json = new File(Constant.JSON_REQUEST+"/RegisterUser_Pwd.json");
+        File pwd_json = new File(Constant.JSON_REQUEST+"/RegisterUser/RegisterUser_Pwd.json");
         reqresAPI.postLoginUser(pwd_json);
     }
 }
