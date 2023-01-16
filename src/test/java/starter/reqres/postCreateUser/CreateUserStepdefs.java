@@ -19,7 +19,7 @@ public class CreateUserStepdefs {
     ReqresAPI reqresAPI;
     @Given("Post create user with valid json")
     public void postCreateUserWithValidJson() {
-        File valid_json = new File(Constant.JSON_REQUEST+"/RequestUser.json");
+        File valid_json = new File(Constant.JSON_REQUEST+"/CreateUser/RequestUser.json");
         reqresAPI.postCreateUser(valid_json);
     }
 
@@ -42,25 +42,25 @@ public class CreateUserStepdefs {
 
     @Given("Post create user with valid json \\(contain special character)")
     public void postCreateUserWithValidJsonContainSpecialCharacter() {
-        File specChar_json = new File(Constant.JSON_REQUEST+"/RequestUser_specChar.json");
+        File specChar_json = new File(Constant.JSON_REQUEST+"/CreateUser/RequestUser_specChar.json");
         reqresAPI.postCreateUser(specChar_json);
     }
 
     @Given("Post create user with valid json \\(contain numeric)")
     public void postCreateUserWithValidJsonContainNumeric() {
-        File numChar_json = new File(Constant.JSON_REQUEST+"/RequestUser_numChar.json");
+        File numChar_json = new File(Constant.JSON_REQUEST+"/CreateUser/RequestUser_numChar.json");
         reqresAPI.postCreateUser(numChar_json);
     }
 
     @Given("Post create user with invalid json")
     public void postCreateUserWithInvalidJson() {
-        File inv_json = new File(Constant.JSON_REQUEST+"/RequestUser_inv.json");
+        File inv_json = new File(Constant.JSON_REQUEST+"/CreateUser/RequestUser_inv.json");
         reqresAPI.postCreateUser(inv_json);
     }
 
     @Given("Post create user with no content json")
     public void postCreateUserWithNoContentJson() {
-        File null_json = new File(Constant.JSON_REQUEST+"/RequestUser_null.json");
+        File null_json = new File(Constant.JSON_REQUEST+"/CreateUser/RequestUser_null.json");
         reqresAPI.postCreateUser(null_json);
     }
 }
