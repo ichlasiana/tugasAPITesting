@@ -1,6 +1,6 @@
-# Getting started with REST API testing with Serenity and Cucumber 6
+# Tugas ALTA QE 8 : API AUTOMATION TESTING
 
-This is a simple starter project for Serenity with Cucumber 6 and RestAssured
+Using Java Programming Language and Gherkin Language to create test cases.
 
 ## Want to learn more?
 For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
