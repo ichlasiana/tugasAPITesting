@@ -1,0 +1,31 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "suit": {
+      "type": "string"
+    },
+    "EVA": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "job",
+    "suit",
+    "EVA",
+    "updatedAt"
+  ]
+}
+
